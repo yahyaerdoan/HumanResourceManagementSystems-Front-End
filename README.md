@@ -68,3 +68,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Human Resource Management Systems
+## UML Diagram oluşturuldu.
+### Kaynak araç (https://app.diagrams.net/)
+- ![Uml DiagramHrms](https://user-images.githubusercontent.com/77584301/121774542-8b20b000-cb8b-11eb-8161-d6c11f7631df.png)
+
