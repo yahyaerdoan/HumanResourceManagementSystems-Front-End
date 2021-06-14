@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, GridColumn, GridRow } from "semantic-ui-react";
 import JobAdvertList from "../pages/Business/JobAdvert/JobAdvertList";
 import TypeOfWorkList from "../pages/Business/TypeOfWork/TypeOfWorkList";
-import EmployerList from "../pages/Users/Employer/Employer";
+import EmployerList from "../pages/Users/Employer/EmployerList";
 import JobSeekerList from "../pages/Users/JobSeeker/JobSeekerList";
 import SystemWorkerList from "../pages/Users/SystemWorker/SystemWorkerList";
 

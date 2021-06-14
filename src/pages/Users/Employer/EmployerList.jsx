@@ -33,8 +33,8 @@ export default function EmployerList() {
           {employers.map((employer) => (
             <Table.Row key = {employer.id}>
               <Table.Cell>{employer.companyName}</Table.Cell>
-              <Table.Cell>{employer.website}</Table.Cell>
-              <Table.Cell>{employer.email}</Table.Cell>
+              <Table.Cell>{employer.webSiteDomainName}</Table.Cell>
+              <Table.Cell>{employer.emailAddress}</Table.Cell>
               <Table.Cell>{employer.phoneNumber}</Table.Cell>
               <Table.Cell>
                 <Button>View</Button>

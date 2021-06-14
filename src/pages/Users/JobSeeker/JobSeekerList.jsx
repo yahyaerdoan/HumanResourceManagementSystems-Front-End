@@ -31,7 +31,7 @@ export default function JobSeekerList() {
             <Table.Row key={jobSeeker.id}>
               <Table.Cell>{jobSeeker.firstName}</Table.Cell>
               <Table.Cell>{jobSeeker.lastName}</Table.Cell>
-              <Table.Cell>{jobSeeker.email}</Table.Cell>
+              <Table.Cell>{jobSeeker.emailAddress}</Table.Cell>
               <Table.Cell>
                 <Button>View</Button>
               </Table.Cell>
