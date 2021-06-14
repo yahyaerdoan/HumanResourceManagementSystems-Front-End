@@ -4,13 +4,13 @@ import JobAdvertService from "../../../services/jobAdvertService";
 
 
 export default function JobAdvertList() {
-  const [adverts, setAdverts] = useState([]);
+  const [jobAdverts, setJobAdverts] = useState([]);
 
   useEffect(() => {
     let jobAdvertService = new JobAdvertService();
     jobAdvertService
       .getJobAdverts()
-      .then((result) => setAdverts(result.data.data));
+      .then((result) => setJobAdverts(result.data.data));
   }, []);
 
   return (
@@ -34,15 +34,15 @@ export default function JobAdvertList() {
         </Table.Header>
 
         <Table.Body>
-          {adverts.map((advert) => (
-            <Table.Row key={advert.id}>
-              <Table.Cell>{advert.typeOfWork.title}</Table.Cell>
-              <Table.Cell>{advert.typeOfWork.description}</Table.Cell>
-              <Table.Cell>{advert.employer.companyName}</Table.Cell>
-              <Table.Cell>{advert.city.name}</Table.Cell>
-              <Table.Cell>{advert.openPositionCount}</Table.Cell>
-              <Table.Cell>{advert.deadline}</Table.Cell>
-              <Table.Cell>{advert.open.toString()}</Table.Cell>
+          {jobAdverts.map((jobAdvert) => (
+            <Table.Row key={jobAdvert.id}>
+              <Table.Cell>{jobAdvert.typeOfWork.title}</Table.Cell>
+              <Table.Cell>{jobAdvert.typeOfWork.description}</Table.Cell>
+              <Table.Cell>{jobAdvert.employer.companyName}</Table.Cell>
+              <Table.Cell>{jobAdvert.city.name}</Table.Cell>
+              <Table.Cell>{jobAdvert.openPositionCount}</Table.Cell>
+              <Table.Cell>{jobAdvert.deadline}</Table.Cell>
+              <Table.Cell>{jobAdvert.open.toString()}</Table.Cell>
               <Table.Cell>
                 <Button>View</Button>
               </Table.Cell>
