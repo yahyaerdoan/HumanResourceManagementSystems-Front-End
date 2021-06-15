@@ -23,7 +23,7 @@ export default function EmployerList() {
           <Table.Row>
             <Table.HeaderCell>Company Name</Table.HeaderCell>
             <Table.HeaderCell>Website</Table.HeaderCell>
-            <Table.HeaderCell>Email</Table.HeaderCell>
+            <Table.HeaderCell>Email Address</Table.HeaderCell>
             <Table.HeaderCell>Phone Number</Table.HeaderCell>
             <Table.HeaderCell>Detail</Table.HeaderCell>
           </Table.Row>
