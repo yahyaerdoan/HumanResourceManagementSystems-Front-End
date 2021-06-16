@@ -2,14 +2,14 @@ import './App.css';
 import 'semantic-ui-css/semantic.min.css'
 import { Container } from 'semantic-ui-react';
 import Dashboard from './layouts/Dashboard';
-import NavBar from './layouts/NavBar';
 import Footer from './layouts/Footer';
+import Navbar from './layouts/NavBar';
 
 
 function App() {
   return (
     <div className="App">
-     <NavBar/>
+     <Navbar/>
       <Container className="main">
         <Dashboard />
       </Container>
