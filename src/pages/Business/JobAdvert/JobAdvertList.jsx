@@ -10,7 +10,7 @@ export default function JobAdvertList() {
     let jobAdvertService = new JobAdvertService();
     jobAdvertService
       .getJobAdverts()
-      .then((result) => setJobAdverts(result.data.data));
+      .then((result) => setJobAdverts(result.data.data));     
   }, []);
 
   return (

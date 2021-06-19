@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid, GridColumn, GridRow } from "semantic-ui-react";
+import JobAdvertAdd from "../pages/Business/JobAdvert/JobAdvertAdd";
 import JobAdvertList from "../pages/Business/JobAdvert/JobAdvertList";
 import TypeOfWorkList from "../pages/Business/TypeOfWork/TypeOfWorkList";
 import EmployerList from "../pages/Users/Employer/EmployerList";
@@ -10,7 +11,10 @@ export default function Section() {
   return (
     <div>
       <Grid>
-        <GridRow>
+      <GridRow>
+          <GridColumn size={14}>{<JobAdvertAdd />}</GridColumn>
+        </GridRow>
+        {/* <GridRow>
           <GridColumn size={14}>{<JobSeekerList />}</GridColumn>
         </GridRow>
         <Grid.Row>
@@ -24,7 +28,7 @@ export default function Section() {
         </Grid.Row>
         <Grid.Row>
           <GridColumn size={14}>{<SystemWorkerList />}</GridColumn>
-        </Grid.Row>
+        </Grid.Row> */}
       </Grid>
     </div>
   );
