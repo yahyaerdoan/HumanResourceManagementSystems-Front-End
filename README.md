@@ -73,15 +73,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ## UML Diagram oluşturuldu.
 ### Kaynak araç (https://app.diagrams.net/)
 - ![Uml DiagramHrms](https://user-images.githubusercontent.com/77584301/121774542-8b20b000-cb8b-11eb-8161-d6c11f7631df.png)
-## Kullanılan Araçlar
-### Paketler:
+## Tools Used
+### Packets:
 - npx create-react-app human-resource-management-systems
-- npm install semantic-ui-css --save
+- npm install semantic-ui-css --save (https://react.semantic-ui.com/usage)
 - import 'semantic-ui-css/semantic.min.css';
-- npm install axios
-- npm install formik --save
-- npm install yup --save
-- npm install react-redux
-- npm install redux
-- npm install --save redux-devtools-extension
+- npm install axios (https://axios-http.com/docs/intro)
+- npm install formik --save (https://formik.org/docs/overview)
+- npm install yup --save (https://formik.org/docs/guides/validation)
+- npm install react-redux (https://react-redux.js.org/introduction/getting-started)
+- npm install redux (https://redux.js.org/introduction/getting-started)
+- npm install --save redux-devtools-extension (https://www.npmjs.com/package/redux-devtools-extension)
 
