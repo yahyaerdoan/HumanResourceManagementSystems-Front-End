@@ -86,6 +86,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - npm install --save redux-devtools-extension (https://www.npmjs.com/package/redux-devtools-extension)
 - npm install --save react-toastify(https://www.npmjs.com/package/react-toastify)
 - import 'react-toastify/dist/ReactToastify.css';
-- Dashboard= <ToastContainer position="bottom-right" />
+- Add to Dashboard=" <ToastContainer position="bottom-right" /> "
 - import { ToastContainer, toast } from 'react-toastify';
 
