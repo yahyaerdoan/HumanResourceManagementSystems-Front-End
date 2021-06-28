@@ -87,4 +87,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - npm install --save react-toastify(https://www.npmjs.com/package/react-toastify)
 - import 'react-toastify/dist/ReactToastify.css';
 - <ToastContainer position="bottom-right" />
+- import { ToastContainer, toast } from 'react-toastify';
 
