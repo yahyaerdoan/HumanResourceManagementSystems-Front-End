@@ -84,4 +84,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - npm install react-redux (https://react-redux.js.org/introduction/getting-started)
 - npm install redux (https://redux.js.org/introduction/getting-started)
 - npm install --save redux-devtools-extension (https://www.npmjs.com/package/redux-devtools-extension)
+- npm install --save react-toastify(https://www.npmjs.com/package/react-toastify)
+- import 'react-toastify/dist/ReactToastify.css';
 
