@@ -77,7 +77,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### Packets:
 - npx create-react-app human-resource-management-systems
 - npm install semantic-ui-css --save (https://react.semantic-ui.com/usage)
-- import 'semantic-ui-css/semantic.min.css';
+- Add to index.js, import 'semantic-ui-css/semantic.min.css';
 - npm install axios (https://axios-http.com/docs/intro)
 - npm install formik --save (https://formik.org/docs/overview)
 - npm install yup --save (https://formik.org/docs/guides/validation)
@@ -85,7 +85,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - npm install redux (https://redux.js.org/introduction/getting-started)
 - npm install --save redux-devtools-extension (https://www.npmjs.com/package/redux-devtools-extension)
 - npm install --save react-toastify(https://www.npmjs.com/package/react-toastify)
-- import 'react-toastify/dist/ReactToastify.css';
-- Add to Dashboard= ToastContainer position="bottom-right"
+- Add to index.js, import 'react-toastify/dist/ReactToastify.css';
+- Add to Dashboard, ToastContainer position="bottom-right"
 - import { ToastContainer, toast } from 'react-toastify';
 
