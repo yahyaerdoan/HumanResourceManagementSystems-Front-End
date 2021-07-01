@@ -37,8 +37,17 @@ export default function TypeOfWorkAdd() {
               }}
             >
               <Form className="ui form">
-                  <HrmsTexInput></HrmsTexInput>
-                <FormField>
+                <label><b>Title</b></label>
+                <HrmsTexInput name="title" placeholder="title"></HrmsTexInput>
+                <label>Description</label>
+                <HrmsTexInput
+                  name="description"
+                  placeholder="description"
+                ></HrmsTexInput>
+
+                {/* Buradaki alanlar global olarak HrmstexInput'a aktarıldı. Temiz kod oluşturuldu. */}
+
+                {/* <FormField>
                   <label>Title</label>
                   <Field name="title" placeholder="title"></Field>
                   <ErrorMessage
@@ -47,8 +56,8 @@ export default function TypeOfWorkAdd() {
                       <Label pointing basic color="red" content={error}></Label>
                     )}
                   ></ErrorMessage>
-                </FormField>
-                <FormField>
+                </FormField> */}
+                {/* <FormField>
                   <label>Description</label>
                   <Field name="description" placeholder="description"></Field>
                   <ErrorMessage
@@ -57,7 +66,8 @@ export default function TypeOfWorkAdd() {
                       <Label pointing basic color="red" content={error}></Label>
                     )}
                   ></ErrorMessage>
-                </FormField>
+                </FormField> */}
+
                 <Button color="green" type="submit">
                   Ekle
                 </Button>
