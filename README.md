@@ -70,7 +70,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 # Human Resource Management Systems
-## UML Diagram oluşturuldu.
-### Kaynak araç (https://app.diagrams.net/)
+## UML Diagram created
+### Auxiliary tool (https://app.diagrams.net/)
 - ![Uml DiagramHrms](https://user-images.githubusercontent.com/77584301/121774542-8b20b000-cb8b-11eb-8161-d6c11f7631df.png)
+## Tools Used
+### Packets:
+- npx create-react-app human-resource-management-systems
+- npm install semantic-ui-css --save (https://react.semantic-ui.com/usage)
+- Add to index.js, import 'semantic-ui-css/semantic.min.css';
+- npm install axios (https://axios-http.com/docs/intro)
+- npm install formik --save (https://formik.org/docs/overview)
+- npm install yup --save (https://formik.org/docs/guides/validation)
+- npm install react-redux (https://react-redux.js.org/introduction/getting-started)
+- npm install redux (https://redux.js.org/introduction/getting-started)
+- npm install --save redux-devtools-extension (https://www.npmjs.com/package/redux-devtools-extension)
+- npm install --save react-toastify(https://www.npmjs.com/package/react-toastify)
+- Add to index.js, import 'react-toastify/dist/ReactToastify.css';
+- Add to Dashboard, ToastContainer position="bottom-right"
+- import { ToastContainer, toast } from 'react-toastify';
 
