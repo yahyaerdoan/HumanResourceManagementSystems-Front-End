@@ -16,7 +16,7 @@ export default function footer() {
       <Segment
         inverted
         vertical
-        style={{ margin: "1em 0em 0em", padding: "1em 0em" }}
+        style={{ margin: "10em 0em 0em", padding: "5em 0em", bottom: "0em" }}
       >
         <Container textAlign="center">
           <Grid divided inverted stackable>
