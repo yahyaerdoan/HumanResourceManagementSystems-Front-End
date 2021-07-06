@@ -1,24 +1,31 @@
-import { ErrorMessage, Field, Form, Formik } from "formik";
+import {Form, Formik } from "formik";
 import React from "react";
 import {
   Button,
   Card,
-  CardContent,
-  FormField,
+  CardContent, 
   Header,
-  Icon,
-  Label,
+  Icon,  
   Segment,
 } from "semantic-ui-react";
 import * as Yup from "yup";
 import HrmsTexInput from "../../../utilities/customFormControls/HrmsTexInput";
+import TypeOfWorkService from "../../../services/typeOfWorkService";
+import swal from "sweetalert";
 
 export default function TypeOfWorkAdd() {
-  const initialValues = { title: "", description: "" };
-  const schema = Yup.object({
+
+  let typeOfWorkService = new TypeOfWorkService()
+
+  const TypeOfWorkSchema = Yup.object({
     title: Yup.string().required("Başlık alanı boş bırakılamaz!"),
     description: Yup.string().required("Açıklama alanı boş bırakılamaz!"),
   });
+  
+  const initialValues = { title: "", description: "" };
+
+  
+  
   return (
     <div>
       <Header as="h2">
@@ -31,43 +38,17 @@ export default function TypeOfWorkAdd() {
           <CardContent>
             <Formik
               initialValues={initialValues}
-              validationSchema={schema}
+              validationSchema={TypeOfWorkSchema}
               onSubmit={(values) => {
-                console.log(values);
+                typeOfWorkService.add(values).then((result)=> console.log(result.data.message));
+                swal("Başarılı!", "İş ilanı eklendi!", "success");
               }}
             >
               <Form className="ui form">
                 <label><b>Title</b></label>
                 <HrmsTexInput name="title" placeholder="title"></HrmsTexInput>
-                <label>Description</label>
-                <HrmsTexInput
-                  name="description"
-                  placeholder="description"
-                ></HrmsTexInput>
-
-                {/* Buradaki alanlar global olarak HrmstexInput'a aktarıldı. Temiz kod oluşturuldu. */}
-
-                {/* <FormField>
-                  <label>Title</label>
-                  <Field name="title" placeholder="title"></Field>
-                  <ErrorMessage
-                    name="title"
-                    render={(error) => (
-                      <Label pointing basic color="red" content={error}></Label>
-                    )}
-                  ></ErrorMessage>
-                </FormField> */}
-                {/* <FormField>
-                  <label>Description</label>
-                  <Field name="description" placeholder="description"></Field>
-                  <ErrorMessage
-                    name="description"
-                    render={(error) => (
-                      <Label pointing basic color="red" content={error}></Label>
-                    )}
-                  ></ErrorMessage>
-                </FormField> */}
-
+                <label><b>Description</b></label>
+                <HrmsTexInput name="description" placeholder="description"></HrmsTexInput>
                 <Button color="green" type="submit">
                   Ekle
                 </Button>

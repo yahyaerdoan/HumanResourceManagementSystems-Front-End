@@ -14,7 +14,7 @@ export default function Section() {
       <GridRow>
           <GridColumn size={14}>{<JobAdvertAdd />}</GridColumn>
         </GridRow>
-        {/* <GridRow>
+        <GridRow>
           <GridColumn size={14}>{<JobSeekerList />}</GridColumn>
         </GridRow>
         <Grid.Row>
@@ -28,7 +28,7 @@ export default function Section() {
         </Grid.Row>
         <Grid.Row>
           <GridColumn size={14}>{<SystemWorkerList />}</GridColumn>
-        </Grid.Row> */}
+        </Grid.Row>
       </Grid>
     </div>
   );
