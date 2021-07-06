@@ -16,7 +16,7 @@ export default function Dashboard() {
             <SideBar />
           </GridColumn>
           <GridColumn width={14}>
-            {/* <Route exact path="/" component={JobAdvertList}/> */}
+            {<Route exact path="/" component={JobAdvertList}/>}
             <Route exact path="/jobAdvert" component={JobAdvertList}/>
             <Route exact path="/jobAdvert: id" component={JobAdvertDetail}/>
             <Route exact path="/typeOfWork/add" component={TypeOfWorkAdd}/>

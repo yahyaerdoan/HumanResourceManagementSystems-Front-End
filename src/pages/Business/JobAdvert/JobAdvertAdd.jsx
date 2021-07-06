@@ -53,7 +53,7 @@ export default function JobAdvertAdd() {
       deadline: "",
       publishedAt: "",
       //isOpen: "",
-      //employerId: "",
+      employerId: "",
       cityId: "",
       typeOfWorkId: "",
       typeOfWorkplaceId: "",
@@ -61,7 +61,7 @@ export default function JobAdvertAdd() {
     },
     validationSchema: JobAdvertAddSchema,
     onSubmit: (values) => {  
-      // values.employerId= 11
+       values.employerId= 11
         jobAdvertService.add(values)
         .then((result) => console.log(result.data.message))
       alert("İş ilanı eklendi, personelin onayı ardından listelenecektir");
@@ -370,7 +370,7 @@ export default function JobAdvertAdd() {
                       onChange={(event, data) =>
                         handleChangeSemantic(data.value, "publishedAt")
                       }
-                      value={formik.values.deadline}
+                      value={formik.values.publishedAt}
                       onBlur={formik.handleBlur}
                       name="publishedAt"
                       placeholder="yayınlanma tarihi"

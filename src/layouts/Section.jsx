@@ -11,9 +11,9 @@ export default function Section() {
   return (
     <div>
       <Grid>
-      {/* <GridRow>
+      <GridRow>
           <GridColumn size={14}>{<JobAdvertAdd />}</GridColumn>
-        </GridRow> */}
+        </GridRow>
         {/* <GridRow>
           <GridColumn size={14}>{<JobSeekerList />}</GridColumn>
         </GridRow>
